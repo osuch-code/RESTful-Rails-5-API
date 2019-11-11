@@ -1,5 +1,5 @@
 module Api # CAPITAL Api
-  module V1 # CAPITAL V 
+  module V1 # CAPITAL V
     class ArticlesController < ApplicationController
       # INDEX - SHOW ALL ARTICLES POSTMANED
       def index
@@ -38,9 +38,9 @@ module Api # CAPITAL Api
       end
 
       private
-      # PARAMS PERMITTED WHEN UPDATING - no need to sepcify in Postman as gives errors if ether is blank
+      # PARAMS PERMITTED WHEN UPDATING - no need to sepcify in Postman as gives errors if fields left blank
       def article_params
-        params.permit(:title, :body)
+        params.permit(:title, :body, :superhero)
       end
     end
   end

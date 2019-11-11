@@ -1,5 +1,6 @@
 class Article < ApplicationRecord
   validates :title, presence: true
   validates :body, presence: true
-  # Validates - presenec = required fields
+  validates :superhero, presence: true
+  # Validates - presence = required fields
 end
